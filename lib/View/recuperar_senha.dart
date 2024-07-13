@@ -9,11 +9,14 @@ class Recaill extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(appBar: 
     AppBar(
-      title: const Text('Recuperar Senha'),
+      title: const Text('Recuperar Senha',style: TextStyle(
+        color: Colors.white
+      ),),
+      backgroundColor: Color.fromARGB(255, 5, 91, 71),
     ),
       body: Container(
         decoration: const BoxDecoration(
-          color:  Colors.amber
+          color:  Colors.white
         ),
         child: ListView(
           children: [
@@ -49,7 +52,9 @@ class Recaill extends StatelessWidget {
               padding: const EdgeInsets.only(left: 16, right: 16, top: 20),
               child: ElevatedButton(
                 onPressed: (){}, 
-                child: const Text('Alterar Senha')),
+                child: const Text('Alterar Senha',style: TextStyle(
+                  color: Color.fromARGB(255, 5, 91, 71)
+                ),)),
             )
           ],
         ),

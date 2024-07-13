@@ -39,9 +39,19 @@ class _SecondPageState extends State<SecondPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
-        color: Colors.amber,
+        color: Color.fromARGB(102, 5, 144, 54),
         child: ListView(
           children: [
+            Row(
+              mainAxisAlignment: MainAxisAlignment.end,
+              children: [
+                IconButton(onPressed: (){}, 
+                icon: Icon(Icons.send), 
+                iconSize: 30,
+                color: Colors.black,)
+              ],
+
+            ),
             Card(
               child: Column(
                 children: [
@@ -117,21 +127,21 @@ class _SecondPageState extends State<SecondPage> {
           BottomNavigationBarItem(
             icon: Icon(Icons.home),
             label: 'Feed',
-            backgroundColor: Colors.deepPurple),
+            backgroundColor: Color.fromARGB(255, 5, 91, 71)),
             BottomNavigationBarItem(
             icon: Icon(Icons.search),
             label: 'Explorar',
-            backgroundColor: Colors.deepPurple,
+            backgroundColor: Color.fromARGB(255, 5, 91, 71),
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.notifications),
             label: 'Notificação',
-            backgroundColor: Colors.deepPurple,
+            backgroundColor: Color.fromARGB(255, 5, 91, 71),
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.person),
             label: 'Perfil',
-            backgroundColor: Colors.deepPurple,
+            backgroundColor: Color.fromARGB(255, 5, 91, 71),
           ),  
         ],
         currentIndex: _selectedIndex,

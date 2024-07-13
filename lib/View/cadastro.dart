@@ -13,12 +13,17 @@ class _CadastroState extends State<Cadastro> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+      backgroundColor: const Color(0xFF055B47),
+      title: const Text('Cadastro', style: TextStyle(
+        color: Colors.white
+      ),)),
       body: Container(
-        color: Colors.amber,
+        color: Colors.white,
         child: ListView(
           children: [
               const Padding(
-                padding: EdgeInsets.only(left: 16,right: 16, top: 200),
+                padding: EdgeInsets.only(left: 16,right: 16, top: 50),
                 child: Expanded(
                      child: TextField(
                       decoration: InputDecoration(
@@ -93,7 +98,10 @@ class _CadastroState extends State<Cadastro> {
                               ),
                               );
                       },
-                      child: const  Text('Cadastrar'),
+                      child: const  Text('Cadastrar',
+                      style: TextStyle(
+                        color: Color.fromARGB(255, 5, 91, 71)
+                      ),),
                     ),
                   ),
                 ),

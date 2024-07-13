@@ -14,10 +14,11 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'PetsPlace',
+      title: 'PetSocial',
       theme: ThemeData(
         
-        primarySwatch: Colors.deepPurple,
+        //primarySwatch: Color(0xFF055B47),
+      
       ),
       home: const MyHomePage(),
     );

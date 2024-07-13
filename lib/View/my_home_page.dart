@@ -18,13 +18,14 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
-        color: Colors.amber,
+        color: Colors.white,
         child: ListView(
           children: [
             Center(
               child: Padding(padding: const EdgeInsets.only(top: 1, left: 16, right: 16),
               child: Image.asset("assets/logo.png",
               height: 300,
+              
               color: Colors.black,),),
             ),
             const Padding(
@@ -80,7 +81,10 @@ class _MyHomePageState extends State<MyHomePage> {
                         return const Recaill();
                       },),);
                  },
-                  child: const Text('Recuperar senha'),
+                  child: const Text('Recuperar senha',
+                  style: TextStyle(
+                    color: Color.fromARGB(255, 5, 91, 71)
+                  ),),
               ),
                ),
                Padding(
@@ -93,7 +97,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         return  const SecondPage();
                       },),);
                   }, 
-                  child: const Text('Entrar'),),
+                  child: const Text('Entrar', style: TextStyle(color: Color.fromARGB(255, 5, 91, 71)),),),
                   ),
 
                   const SizedBox(
@@ -156,6 +160,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         },
                         child: const Text('Cadastrar?',style: TextStyle(
                           fontSize: 16,
+                          color: Color.fromARGB(255, 5, 91, 71)
                         ),),
                       ),
                     ),
